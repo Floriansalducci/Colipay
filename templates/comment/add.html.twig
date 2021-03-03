@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    {{ parent() }} - Ajouter un commentaire
+{% endblock %}
+
+{% block body %}
+    <h1 class="mt-5">Ajouter un commentaire </h1>
+
+    {{ form_start(commentForm) }}
+    {{ form_widget(commentForm) }}
+
+
+    <button class="btn btn-primary" type="submit">Valider</button>
+    {{ form_end(commentForm) }}
+
+{% endblock %}
